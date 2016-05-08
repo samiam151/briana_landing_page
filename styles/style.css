@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+body {
+  background-color: #fcd7b3; }
+
+li {
+  text-decoration: none; }
+
+.container {
+  margin: 0 auto;
+  width: 85%; }
+
+.modalCover {
+  z-index: 50; }
+
+.home {
+  background-image: url("../assets/bsam_port_bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+  .home img {
+    width: 60%;
+    margin-left: 40%;
+    margin-top: 13%; }
+
+.quote {
+  text-align: center;
+  padding: 5% 0%;
+  background-color: #FFF; }
+  .quote .quote-saying {
+    font-size: 2em; }
+
+.work li {
+  display: inline-block;
+  height: 250px;
+  width: 25%;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 3%;
+  border: 7px solid #f8a351;
+  border-radius: 3px; }
+  .work li.work-recorder {
+    background-image: url("../assets/recorder/thumb.jpg");
+    background-position: center;
+    background-size: cover; }
+  .work li.work-gentleman {
+    background-image: url("../assets/gentleman/thumb.jpg");
+    background-position: top;
+    background-size: cover; }
+  .work li.work-gift {
+    background-image: url("../assets/gift_cert/gift_cert_final.jpg");
+    background-position: center;
+    background-size: cover; }
+
+.about {
+  margin: 5%; }
+  .about .bio {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 1em;
+    line-height: 1.2em; }
+
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 1.5%;
+  margin-top: 5%; }
+
+.modal {
+  display: none;
+  opacity: 0;
+  transition: opacity 2s ease;
+  position: fixed;
+  top: 2%;
+  left: 15%;
+  width: 70%;
+  height: 85%;
+  overflow: scroll;
+  border: 10px solid black;
+  background-color: purple;
+  padding: 2%;
+  border-radius: 0.75%; }
+  .modal.modalContent {
+    padding: 5%;
+    overflow: hidden; }
+  .modal .modal-pictures img {
+    max-width: 100%;
+    padding-top: 2%;
+    height: auto; }
+  .modal .close {
+    color: yellow;
+    cursor: pointer; }
+
+.objective {
+  color: red; }
+
+/*# sourceMappingURL=style.css.map */

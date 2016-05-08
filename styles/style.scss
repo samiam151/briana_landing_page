@@ -1,0 +1,148 @@
+// vars and mixins
+$brown: rgb(252,215,179);
+
+@mixin workThumbnail($url, $position) {
+   background-image: url($url);
+   background-position: $position;
+   background-size: cover;
+}
+
+
+// Globals
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Open Sans', sans-serif;
+}
+
+body {
+   background-color: $brown;
+
+}
+
+li {
+   // list-style-type: none;
+   text-decoration: none;
+}
+
+.container {
+   margin: 0 auto;
+   width: 85%;
+}
+
+.modalCover {
+   z-index: 50;
+}
+
+// Home section
+.home {
+   background-image: url('../assets/bsam_port_bg.jpg');
+   background-size: cover;
+   background-position: bottom;
+   background-repeat: no-repeat;
+
+   img {
+      width: 60%;
+      margin-left: 40%;
+      margin-top: 13%;
+   }
+}
+
+// Quote Section
+.quote {
+   text-align: center;
+   padding: 5% 0%;
+   background-color: #FFF;
+
+   .quote-saying {
+      font-size: 2em;
+   }
+}
+
+// Work section
+.work {
+
+   li {
+      display: inline-block;
+      height: 250px;
+      width: 25%;
+      text-align: center;
+      margin-left: 5%;
+      margin-top: 3%;
+      border: 7px solid darken($brown, 20%);
+      border-radius: 3px;
+
+      &.work-recorder {
+         @include workThumbnail("../assets/recorder/thumb.jpg", center);
+      }  
+
+      &.work-gentleman {
+         @include workThumbnail("../assets/gentleman/thumb.jpg", top);
+      }
+
+      &.work-gift {
+         @include workThumbnail("../assets/gift_cert/gift_cert_final.jpg", center);
+      }
+   }
+}
+
+// About Section
+.about {
+   margin: 5%;
+
+   .bio {
+      text-align: center;
+      width: 75%;
+      margin: 0 auto;
+      font-size: 1em;
+      line-height: 1.2em;
+   }
+}
+
+// Footer
+footer {
+   background-color: #000;
+   color: white;
+   text-align: center;
+   padding: 1.5%;
+   margin-top: 5%;
+}
+
+// Modal
+.modal {
+   display: none;
+   opacity: 0;
+   transition: opacity 2s ease;
+   position: fixed;
+   top: 2%;
+   left: 15%;
+   width: 70%;
+   height: 85%;
+   overflow: scroll;
+   border: 10px solid black;
+   background-color: purple;
+   padding: 2%;
+   border-radius: 0.75%;
+   
+   &.modalContent {
+      padding: 5%;
+      overflow: hidden;
+   }
+   
+   .modal-pictures {
+      img {
+         max-width: 100%;
+         padding-top: 2%;
+         height: auto;
+      }
+   }
+
+   .close {
+      color: yellow;
+      cursor: pointer;
+   }
+}
+
+.objective {
+   color: red;
+}
