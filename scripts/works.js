@@ -2,9 +2,9 @@ var works = [
     {
         name: 'Typeface Book',
         pictures: [
-            'assets/typo_book/expressive_type_cutting',
-            'assets/typo_book/expressive_type_water',
-            'assets/typo_book/type_book_binding'
+            'assets/typo_book/expressive_type_cutting.jpg',
+            'assets/typo_book/expressive_type_water.jpg',
+            'assets/typo_book/type_book_binding.jpg'
         ],
         problem: 'Problem 1',
         solution: 'Solution 1'
@@ -40,8 +40,10 @@ var works = [
         solution: '<div><h3>Creative Brief: </h3><p>The American Recorder Society is celebrating its 75 year anniversary as an active organization. To celebrate, the ARS will be having a Gala dinner followed by a concert by the Baroque chamber orchestra of Colorado, and featured soloist Pal Leenhoust.</p></div>'
     },
     {
-         name: 'Gift Certificate',
-        pictures: [],
+        name: 'Gift Certificate',
+        pictures: [
+            'assets/gift_cert/gift_cert_final.jpg'
+        ],
         problem: '<div><h3 class="objective">Objective:</h3><p>Redesign a printed massage therapy gift certificate.</p></div>',
         client: '<div><h3>Client:</h3><p>Downtown Chiropractic and Rehabilitation, Fredericksburg,VA</p></div>',
         solution: 'Solution 2'

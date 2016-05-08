@@ -28,7 +28,7 @@ li {
 
 .quote {
   text-align: center;
-  padding: 5% 0%;
+  padding: 10% 0%;
   background-color: #FFF; }
   .quote .quote-saying {
     font-size: 2em; }
@@ -48,11 +48,15 @@ li {
     background-size: cover; }
   .work li.work-gentleman {
     background-image: url("../assets/gentleman/thumb.jpg");
-    background-position: top;
+    background-position: bottom;
     background-size: cover; }
   .work li.work-gift {
     background-image: url("../assets/gift_cert/gift_cert_final.jpg");
     background-position: center;
+    background-size: cover; }
+  .work li.work-type-book {
+    background-image: url("../assets/typo_book/expressive_type_cutting.jpg");
+    background-position: top;
     background-size: cover; }
 
 .about {

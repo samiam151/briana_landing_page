@@ -6,13 +6,13 @@ $('.home').css('height', function(){
     return winHeight;
 });
 
-// Modal
+// Modal functionality
 var modalContent = $('.modalContent'),
         modal = $('.modal');
-        
-$('.work li').each(function(){
-    
 
+$('.work li').each(function(){
+
+    // Click events for the modal
     $(this).on('click', function(){
         var arrayOffset = 1,
             num = $(this).data('work-number'),
@@ -41,8 +41,13 @@ $('.work li').each(function(){
             modal.css('display', 'none');
             $('.modal-pictures').html(''); // clear the pictures div 
         });
-
     });
+
+    // // Hover events
+    // $(this).on('hover', function(){
+    //     $(this).css('background-color', 'black');
+    // });
+
 });
 
 

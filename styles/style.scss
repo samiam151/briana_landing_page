@@ -51,7 +51,7 @@ li {
 // Quote Section
 .quote {
    text-align: center;
-   padding: 5% 0%;
+   padding: 10% 0%;
    background-color: #FFF;
 
    .quote-saying {
@@ -77,12 +77,18 @@ li {
       }  
 
       &.work-gentleman {
-         @include workThumbnail("../assets/gentleman/thumb.jpg", top);
+         @include workThumbnail("../assets/gentleman/thumb.jpg", bottom);
       }
 
       &.work-gift {
          @include workThumbnail("../assets/gift_cert/gift_cert_final.jpg", center);
       }
+
+      &.work-type-book {
+         @include workThumbnail("../assets/typo_book/expressive_type_cutting.jpg", top);
+      }
+      
+
    }
 }
 
